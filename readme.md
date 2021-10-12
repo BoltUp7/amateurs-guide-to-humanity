@@ -1,0 +1,1 @@
+https://boltup7.github.io/amateurs-guide-to-humanity/
