@@ -28,11 +28,11 @@ body {
 
 @media screen and (max-width: 1200px) {
     .logo {
-        width: 25%;
+        max-width: 25%;
     }
 
     .main-navbar {
-        width: 50%;
+        max-width: 50%;
     }
 }
 
