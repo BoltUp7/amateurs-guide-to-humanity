@@ -26,16 +26,6 @@ body {
     margin-right: auto;
 }
 
-@media screen and (max-width: 1200px) {
-    .logo {
-        max-width: 25%;
-    }
-
-    .main-navbar {
-        max-width: 50%;
-    }
-}
-
 .logo a {
     text-decoration: none;
     color: #f3efe9;
@@ -74,6 +64,10 @@ body {
 
 .header .main-navbar .current-page {
     color: #33c5b0;
+}
+
+.icon {
+    display: none;
 }
 
 .main-content {
