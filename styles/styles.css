@@ -26,6 +26,16 @@ body {
     margin-right: auto;
 }
 
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 25%;
+    }
+
+    .main-navbar {
+        width: 50%;
+    }
+}
+
 .logo a {
     text-decoration: none;
     color: #f3efe9;
