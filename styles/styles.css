@@ -15,7 +15,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url(../images/background2.png);
+    background-size: 105%;
     background-color: var(--primary-black);
+    background-repeat: no-repeat;
+    background-position: center bottom;
     color: var(--primary-white);
 }
 
@@ -29,11 +33,13 @@ a {
 }
 
 img {
+    padding-top: 20px;
     width: 100%;
 }
 
 .navbar {
     height: 70px;
+    margin-bottom: 100px;
 }
 
 .navbar ul {
@@ -45,7 +51,7 @@ img {
 .navbar a {
     padding: 10px;
     margin: 0 5px;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .navbar a:hover {
@@ -67,10 +73,29 @@ img {
     margin-top: 10px;
 }
 
+.filler-body {
+    height: 650px;
+}
+
+.social {
+    background-color: var(--primary-white);
+    border-color: var(--primary-red);
+    width: 80%;
+    gap: 100px;
+    margin: 100px auto;
+}
+
+.social img {
+    width: 10%;
+    padding: 90px 0;
+}
+
+/* Utility Classes */
+
 .container {
     margin: 0 auto;
     padding: 0 40px;
-    max-width: 1300px;
+    max-width: 1500px;
 }
 
 .flex {
@@ -78,4 +103,10 @@ img {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
 }
