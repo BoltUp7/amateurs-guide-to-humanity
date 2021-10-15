@@ -20,6 +20,7 @@ body {
     background-color: var(--primary-black);
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-attachment: fixed;
     color: var(--primary-white);
 }
 
