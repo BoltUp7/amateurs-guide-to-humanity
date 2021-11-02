@@ -123,6 +123,7 @@ body {
 .episodes-content {
     width: 50%;
     color: var(--primary-black);
+    font-family: Overthinkers;
     padding: 30px;
     font-size: 30px;
     text-align: center;
