@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:ital,wght@1,700&display=swap');
+@font-face {
+    font-family: Gagalin;
+    src: url("../fonts/Gagalin-Regular.otf")
+}
+@font-face {
+    font-family: Overthinkers;
+    src: url("../fonts/overthinkers.ttf")
+}
 
 :root {
     --primary-red: #e2002b;
@@ -14,61 +22,44 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url(../images/body-background.png);
-    background-size: 30%;
+    font-family: Gagalin;
     background-color: var(--primary-white);
+    background-image: url(../images/about-bg.png);
+    background-position: center center;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
     color: var(--primary-black);
 }
 
-.home-page {
-    background-image: url(../images/mandi-kevin-bg.png);
-    background-position: center top;
-    background-size: 100%;
-}
-
-ul {
-    list-style-type: none;
-    margin-right: -90px;
-}
-
-#last-nav {
-    margin-right: 50px;
-}
-
-a {
-    text-decoration: none;
-    color: var(--primary-white);
-}
-
-img {
-    padding-top: 20px;
-    width: 100%;
-}
-
-.logo {
-    padding-top: 20px;
-    width: 100%;
-}
-
+/* Navbar */
 .navbar {
     height: 70px;
     margin-bottom: 100px;
+    justify-content: space-between;
+    max-width: 100%;
 }
 
 .navbar ul {
     background-color: var(--primary-red);
-    box-shadow: 10px 10px var(--primary-teal);
+    box-shadow: 20px 20px var(--primary-teal);
     display: flex;
+    margin-top: 35px;
+    padding-right: 50px;
+    list-style-type: none;
 }
 
-.navbar a {
+.navbar ul li {
+    padding: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--primary-white);
     padding: 10px;
     margin: 0 5px;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .navbar a:hover {
@@ -79,40 +70,218 @@ img {
     color: var(--primary-teal);
 }
 
-
 .navbar .flex {
     justify-content: space-between;
 }
 
-.navbar img {
-    width: 60%;
-    min-width: 300px;
-    margin-top: 10px;
+/* Home Page */
+.home-page {
+    background-image: url(../images/home-bg.png);
+    background-position: center center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.filler-body {
-    height: 650px;
+.logo {
+    width: 35%;
+    align-self: start;
+    justify-self: start;
 }
 
-.social {
+.logo img {
+    width: 100%;
+}
+
+.home-info {
+    width: 50%;
+    color: var(--primary-white);
     background-color: var(--primary-black);
-    border-color: var(--primary-red);
-    width: 80%;
-    gap: 100px;
-    margin: 100px auto;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    align-self: end;
+    margin-top: 200px;
+    margin-right: 50px;
 }
 
-.social img {
-    width: 10%;
-    padding: 90px 0;
+/* Episodes Page */
+.episodes-page{
+    background-image: url(../images/episodes-bg.png);
+    background-position: center center;
+    background-size: 100%;
+}
+
+.episodes-foot h1 {
+    font-size: 5em;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: -10px;
+    margin-left: 20px;
+}
+
+.episodes-content {
+    width: 50%;
+    color: var(--primary-black);
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 50px;
+    float: right;
+}
+
+/* About Page */
+.about-page {
+    background-image: url(../images/about-bg.png);
+    background-position: center center;
+    background-size: 100%;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: column;
+}
+.about-info-amanda {
+    margin-left: 400px;
+}
+
+.about-info-kevin {
+    margin-left: 900px;
+}
+
+.mom {
+    color: var(--primary-red);
+    font-size: 25px;
+}
+
+.dad {
+    color: var(--primary-teal);
+    font-size: 25px;
+}
+
+.about-names {
+    font-size: 70px;
+    z-index: 1;
+}
+
+.about-content {
+    display: grid;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: -40px;
+    z-index: -1;
+
+}
+
+.red-circle-one {
+    background-image: url(../images/red-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+}
+
+.red-circle-one img {
+    padding: 30px;
+    width: 400px;
+}
+
+.red-circle-two {
+    background-image: url(../images/red-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    display: flex;
+    flex: 1;
+}
+
+.blue-circle-one {
+    background-image: url(../images/blue-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    display: flex;
+    flex: 1;
+}
+
+.blue-circle-one img {
+    padding: 30px;
+    width: 400px;
+}
+
+.blue-circle-two {
+    background-image: url(../images/blue-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1;
+}
+
+.blue-circle-two img {
+    padding: 30px;
+    width: 400px;
+}
+
+.about-content .red-circle-two ul {
+    list-style-type: none;
+    color: var(--primary-white);
+    font-size: 25px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.about-content .blue-circle-one ul {
+    list-style-type: none;
+    color: var(--primary-white);
+    font-size: 25px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Social Page */
+.social-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Overthinkers;
+    font-size: 70px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.facebook {
+    display: flex;
+    align-self: 
+}
+
+.facebook p {
+    transform: rotate(270deg);
+}
+
+.instagram {
+    display: flex;
+}
+
+.instagram img {
+    flex: 1;
+    margin-right: 10px;
 }
 
 /* Utility Classes */
 
 .container {
     margin: 0 auto;
-    padding: 0 40px;
-    max-width: 1500px;
+    padding: 0px;
+    width: 100%;
 }
 
 .flex {
@@ -125,5 +294,5 @@ img {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    gap: 80px;
 }
