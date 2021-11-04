@@ -128,9 +128,10 @@ body {
     padding: 30px;
     font-size: 30px;
     text-align: center;
-    margin-top: 200px;
-    margin-right: 50px;
-    float: right;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 100px;
+    float: left;
 }
 
 /* About Page */
