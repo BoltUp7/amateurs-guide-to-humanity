@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Gagalin;
+    src: url("../fonts/Gagalin-Regular.otf")
+}
+@font-face {
+    font-family: Overthinkers;
+    src: url("../fonts/overthinkers.ttf")
+}
+
+:root {
+    --primary-red: #e2002b;
+    --primary-black: #29211f;
+    --primary-white: #f3efe9;
+    --primary-teal: #33c5b0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Gagalin";
+    color:#29211f;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:#29211f;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    background-color:#e2002b;
+    box-shadow: 20px 20px var(--primary-teal);
+}
+
+.navbar {
+    height: 70px;
+    max-width:
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a{
+    color:#f3efe9;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 30px;
+}
+
+.navbar a:hover {
+    color: var(--primary-black);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
