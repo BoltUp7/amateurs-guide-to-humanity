@@ -39,6 +39,7 @@ body {
     margin-bottom: 100px;
     justify-content: space-between;
     max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
@@ -77,8 +78,8 @@ body {
 /* Home Page */
 .home-page {
     background-image: url(../images/home-bg.png);
-    background-position: top center;
-    background-size: 100%;
+    background-position: top left;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -91,6 +92,7 @@ body {
 
 .logo img {
     width: 100%;
+    flex:1;
 }
 
 .home-info {
@@ -101,7 +103,7 @@ body {
     font-size: 30px;
     text-align: center;
     align-self: end;
-    margin-top: 235px;
+    margin-top: 250px;
     margin-right: 30px;
     line-height: 1.5;
 }
