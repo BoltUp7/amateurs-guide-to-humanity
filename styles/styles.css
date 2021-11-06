@@ -116,6 +116,9 @@ body {
         margin-top: 100px;
         width: 100%;
     }
+    .home-page {
+        background-image: none;
+    }
 }
 
 /* Episodes Page */
