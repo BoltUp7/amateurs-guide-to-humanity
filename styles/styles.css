@@ -79,7 +79,7 @@ body {
 .home-page {
     background-image: url(../images/home-bg.png);
     background-position: top left;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
 }
@@ -106,6 +106,17 @@ body {
     margin-top: 250px;
     margin-right: 30px;
     line-height: 1.5;
+}
+
+@media screen and (max-width: 500px){
+    .home-info{
+        align-self: center;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 100px;
+        width: 90%;
+        flex: 1;
+    }
 }
 
 /* Episodes Page */
