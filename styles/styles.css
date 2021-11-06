@@ -25,10 +25,9 @@ body {
     font-family: Gagalin;
     background-color: var(--primary-white);
     background-image: url(../images/about-bg.png);
-    background-position: center center;
-    background-size: 100%;
+    background-position: top left;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right top;
     background-attachment: fixed;
     color: var(--primary-black);
 }
