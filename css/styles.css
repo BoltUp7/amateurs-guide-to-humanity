@@ -149,7 +149,7 @@ nav a {
 .home-page {
     background-image: url(/images/home-bg.png);
     background-position: top left;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--primary-white);
