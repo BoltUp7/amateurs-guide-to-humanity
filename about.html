@@ -5,61 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amateur's Guide to Humanity | Podcast | About</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/main-logo.svg"/>
-    <link rel = "stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="about-page">
-    <!--Navbar-->
-    <div class="navbar">
-        <div class="container flex navbar">
-            <a class = "logo" href = "index.html"><img src="images/header-image.svg"></a>
+    <div class="title-bar">
+        <div class="container flex">
+            <a class="logo" href="index.html"><img src="images/header-image.svg" alt=""></a>
             <nav>
                 <ul>
                     <li><a href="episodes.html">EPISODES</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="subscribe.html">SUBSCRIBE</a></li>
-                    <li id="last-nav"><a href="social.html">SOCIAL</a></li>
+                    <li><a href="social.html">SOCIAL</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </div>
     </div>
+    <p class="about-content">About Content. Work in Progress</p>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("nav ul");
 
-    <!--Body-->
-    <div class="about-flex">
-    <div class = "about-info-amanda">
-        <p class="mom">MOM. MEMOIRIST. MARKETER. MOTIVATOR.</p>
-        <p class="about-names">AMANDA ROSE</p>
-    </div>
-    <div class = "about-content">
-        <div class="red-circle-one">
-            <img src="images/about-image-left.png">
-        </div>
-        <div class="red-circle-two">
-            <ul>
-                <li>ENNEAGRAM: 4W3</li>
-                <li>AURA: PURPLE</li>
-                <li>SIGN: LEO</li>
-                <li>IDOL: CHER</li>
-                <li>OBSESSION: SCI-FI</li>
-                </ul>
-        </div>
-        <div class="blue-circle-one">
-            <ul>
-                <li>ENNEAGRAM: 2W3</li>
-                <li>AURA: BLUE</li>
-                <li>SIGN: VIRGO</li>
-                <li>IDOL: JEFF GOLDBLUM</li>
-                <li>OBSESSION: SNL</li>
-                </ul>
-        </div>
-        <div class="blue-circle-two">
-            <img src="images/about-image-right.png">
-        </div>
-    </div>
-    <div class = "about-info-kevin">        
-        <p class="about-names">KEVIN RYAN</p>
-        <p class="dad">DAD. DRUMMER. DABBLER. DREAMER.</p>
-    </div>
-    </div>
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,344 @@
+@font-face {
+    font-family: Gagalin;
+    src: url("../fonts/Gagalin-Regular.otf")
+}
+@font-face {
+    font-family: Overthinkers;
+    src: url("../fonts/overthinkers.ttf")
+}
+
+:root {
+    --primary-red: #e2002b;
+    --primary-black: #29211f;
+    --primary-white: #f3efe9;
+    --primary-teal: #33c5b0;
+}
+
+/* Style Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Gagalin;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-black);
+}
+
+img {
+    width:
+}
+
+/* Navbar */
+.title-bar {
+    width: 100%;
+}
+
+.logo {
+    width: 35%;
+    min-width: 150px;
+    margin-left: -40px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav {
+    background-color: var(--primary-red);
+    box-shadow: 20px 20px var(--primary-teal);
+    padding-right: 100px;
+    margin-right: -100px;
+}
+
+nav a:hover {
+    color: var(--primary-black);
+}
+
+.title-bar .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    margin-right:;
+}
+
+nav a {
+    color: var(--primary-white);
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 25px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--primary-black);
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 100%;
+    }
+    nav {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    nav a {
+        color: var(--primary-black);
+    }
+
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: var(--primary-white);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Home Page */
+
+.home-page {
+    background-image: url(/images/home-bg.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--primary-white);
+}
+
+.home-content {
+    max-width: 57%;
+    background-color: var(--primary-black);
+    color: var(--primary-white);
+    padding: 45px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    margin-left: 620px;
+    margin-top: 270px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-page {
+        background-image: none;
+    }
+    .home-content {
+        max-width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+}
+
+/* Episodes Page */
+.episodes-page {
+    background-image: url(/images/episodes-bg.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--primary-white);
+}
+
+.episodes-content {
+    font-family: Overthinkers;
+    max-width: 57%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.episodes-foot h1 {
+    font-size: 6em;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: -10px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .episodes-page {
+        background-image: none;
+    }
+    .episodes-content {
+        max-width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .episodes-foot h1{
+        margin: 0;
+        margin-top: 20px;
+        font-size: 5em;
+        text-align: center;
+        position: relative;
+    }
+
+}
+
+/* About Page */
+.about-page {
+    background-image: url(/images/about-bg.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--primary-white);
+}
+
+@media only screen and (max-width: 768px) {
+    .about-page {
+        background-image: none;
+    }
+}
+
+/* Subscribe Page */
+.subscribe-page {
+    background-image: url(/images/about-bg.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--primary-white);
+}
+
+@media only screen and (max-width: 768px) {
+    .subscribe-page {
+        background-image: none;
+    }
+}
+
+/* Social Page */
+.social-page {
+    background-image: url(/images/about-bg.png);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--primary-white);
+}
+
+.social-content {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: Overthinkers;
+    font-size: 70px;
+}
+
+.facebook {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+.facebook p {
+    transform: rotate(270deg);
+}
+
+.instagram {
+    display: flex;
+    align-self: center;
+}
+
+.instagram img {
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .social-page {
+        background-image: none;
+    }
+
+    .social-content {
+        flex-direction: column;
+    }
+
+    .facebook {
+        margin: 0;
+    }
+
+    .social-icons {
+        order: 1;
+    }
+
+    .social-img {
+        order: 2;
+    }
+}
+
+/* Utility */       
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
