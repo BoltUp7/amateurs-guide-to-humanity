@@ -196,7 +196,14 @@ nav a {
     font-size: 30px;
     text-align: center;
     line-height: 1.5;
-    margin-left: 100px;
+    margin-left: 600px;
+    margin-top: 100px;  
+    position: fixed;
+}
+
+.list-of-episodes {
+    display: flex;
+    justify-content: space-around;
     margin-top: 100px;
 }
 
@@ -273,7 +280,10 @@ nav a {
 
 .social-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.social-content img {
 }
 
 .social-icons {
@@ -281,7 +291,7 @@ nav a {
     flex-direction: column;
     justify-content: space-evenly;
     font-family: Overthinkers;
-    font-size: 70px;
+    font-size: 80px;
 }
 
 .facebook {
@@ -300,11 +310,11 @@ nav a {
 }
 
 .instagram img {
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .social-icons img {
-    width: 150px;
+    width: 170px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -314,6 +324,7 @@ nav a {
 
     .social-content {
         flex-direction: column;
+        justify-content: center;
     }
 
     .facebook {
@@ -326,6 +337,10 @@ nav a {
 
     .social-img {
         order: 2;
+    }
+
+    .instagram p {
+        font-size: 50px;
     }
 }
 
