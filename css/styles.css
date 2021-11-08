@@ -32,10 +32,6 @@ a {
     color: var(--primary-black);
 }
 
-img {
-    width:
-}
-
 /* Navbar */
 .title-bar {
     width: 100%;
@@ -69,7 +65,6 @@ nav a:hover {
 
 nav ul {
     display: flex;
-    margin-right:;
 }
 
 nav a {
@@ -111,13 +106,13 @@ nav a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: var(--primary-white);
+        background-color: var(--primary-teal);
         width: 100%;
-        border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 10;
+        padding: 0;
     }
     nav ul.active {
         left: 0;
@@ -146,6 +141,7 @@ nav a {
 
 /* Home Page */
 
+/*
 .home-page {
     background-image: url(/images/home-bg.png);
     background-position: top left;
@@ -154,6 +150,18 @@ nav a {
     background-attachment: fixed;
     background-color: var(--primary-white);
 }
+
+*/
+
+.home-page {
+    background-image: url(/images/photo-bg.svg), url(/images/top-left-bg.svg);
+    background-position: top left, top right;
+    background-size: 800px, 550px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--primary-white);
+}
+
 
 .home-content {
     max-width: 57%;
@@ -176,15 +184,20 @@ nav a {
         padding: 10px;
         margin: 0;
         margin-top: 20px;
+        color: var(--primary-black);
+        background-color: transparent;
+        border-color: var(--primary-black);
+        border-style: solid;
+        font-size: 25px;
     }
 
 }
 
 /* Episodes Page */
 .episodes-page {
-    background-image: url(/images/episodes-bg.png);
-    background-position: top left;
-    background-size: cover;
+    background-image: url(/images/top-left-bg.svg);
+    background-position: top right;
+    background-size: 550px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--primary-white);
@@ -238,9 +251,9 @@ nav a {
 
 /* About Page */
 .about-page {
-    background-image: url(/images/about-bg.png);
-    background-position: top left;
-    background-size: cover;
+    background-image: url(/images/top-left-bg.svg);
+    background-position: top right;
+    background-size: 550px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--primary-white);
@@ -254,25 +267,78 @@ nav a {
 
 /* Subscribe Page */
 .subscribe-page {
-    background-image: url(/images/about-bg.png);
-    background-position: top left;
-    background-size: cover;
+    background-image: url(/images/top-left-bg.svg);
+    background-position: top right;
+    background-size: 550px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--primary-white);
+}
+
+.subscriptions {
+    margin-top: 100px;
+    margin-right: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.subscriptions div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Overthinkers;
+    font-size: 40px;
+}
+
+.subscriptions div img {
+    width: 150px;
+}
+
+.subscribe-foot h1 {
+    font-size: 6em;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: -10px;
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 768px) {
     .subscribe-page {
         background-image: none;
     }
+
+    .subscribe-foot h1{
+        margin: 0;
+        margin-top: 20px;
+        font-size: 5em;
+        text-align: center;
+        position: relative;
+    }
+
+    .subscriptions {
+        margin: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .subscriptions div img {
+        width: 100px;
+    }
+
+    .subscriptions div p {
+        margin-top: 0;
+    }
 }
 
 /* Social Page */
 .social-page {
-    background-image: url(/images/about-bg.png);
-    background-position: top left;
-    background-size: cover;
+    background-image: url(/images/top-left-bg.svg);
+    background-position: top right;
+    background-size: 550px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--primary-white);
@@ -283,7 +349,8 @@ nav a {
     justify-content: space-evenly;
 }
 
-.social-content img {
+.social-img {
+    height: 500px;
 }
 
 .social-icons {
@@ -291,7 +358,7 @@ nav a {
     flex-direction: column;
     justify-content: space-evenly;
     font-family: Overthinkers;
-    font-size: 80px;
+    font-size: 70px;
 }
 
 .facebook {
@@ -306,7 +373,8 @@ nav a {
 
 .instagram {
     display: flex;
-    align-self: center;
+    align-self: flex-start;
+    margin-left: 40px;
 }
 
 .instagram img {
@@ -314,7 +382,7 @@ nav a {
 }
 
 .social-icons img {
-    width: 170px;
+    width: 120px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -337,10 +405,15 @@ nav a {
 
     .social-img {
         order: 2;
+        display: none;
     }
 
     .instagram p {
-        font-size: 50px;
+        transform: rotate(90deg);
+    }
+
+    .instagram img {
+        margin-right: 0;
     }
 }
 
