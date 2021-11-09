@@ -216,8 +216,17 @@ nav a {
 
 .list-of-episodes {
     display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#player_iframe {
+    padding: px;
+    border: var(--primary-black) solid 10px;
+}
+
+#buzzsprout-small-player {
+    display: none;
 }
 
 .episodes-foot h1 {
@@ -245,6 +254,19 @@ nav a {
         font-size: 5em;
         text-align: center;
         position: relative;
+    }
+    #player_iframe {
+        padding: px;
+        border: var(--primary-black) solid 10px;
+        display: none;
+    }
+    
+    #buzzsprout-small-player {
+        display: block;
+    }
+
+    .list-of-episodes {
+        margin-top: 10px;
     }
 
 }
