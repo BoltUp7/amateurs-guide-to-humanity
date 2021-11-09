@@ -347,6 +347,10 @@ nav a {
         justify-content: space-evenly;
     }
 
+    .subscriptions a {
+        flex-basis: 50%;
+    }
+
     .subscriptions div img {
         width: 100px;
     }
