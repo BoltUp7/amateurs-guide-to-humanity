@@ -168,11 +168,13 @@ nav a {
     background-color: var(--primary-black);
     color: var(--primary-white);
     padding: 45px;
-    font-size: 30px;
+    font-size: 2vw;
     text-align: center;
     line-height: 1.5;
-    margin-left: 620px;
-    margin-top: 270px;
+    /*margin-left: 620px;
+    margin-top: 270px;*/
+    margin-top: 250px;
+    margin-left: 40%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -279,6 +281,7 @@ nav a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--primary-white);
+
 }
 
 @media only screen and (max-width: 768px) {
