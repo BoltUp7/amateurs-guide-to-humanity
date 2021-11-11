@@ -35,6 +35,7 @@ a {
 /* Navbar */
 .title-bar {
     width: 100%;
+    display: flex;
 }
 
 .logo {
@@ -65,13 +66,19 @@ nav a:hover {
 
 nav ul {
     display: flex;
+    flex-basis: 50%;
+}
+
+nav li {
+    padding: 0px 40px;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: var(--primary-white);
-    padding: 10px;
+    padding: 5px;
     margin: 0 5px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .hamburger {
@@ -141,63 +148,122 @@ nav a {
 
 /* Home Page */
 
-/*
 .home-page {
-    background-image: url(/images/home-bg.png);
-    background-position: top left;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: var(--primary-white);
-}
-
-*/
-
-.home-page {
-    background-image: url(/images/photo-bg.svg), url(/images/top-left-bg.svg);
+    background-image: url(/images/new-home-bg.svg), url(/images/new-top-right-bg.svg);
     background-position: top left, top right;
-    background-size: 800px, 550px;
+    background-size: 40vw, 550px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--primary-white);
 }
-
 
 .home-content {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    align-items: flex-end;
+    margin-left: 40vw;
+}
+
+.home-content p {
     max-width: 57%;
-    background-color: var(--primary-black);
-    color: var(--primary-white);
-    padding: 45px;
-    font-size: 2vw;
-    text-align: center;
+    color: var(--primary-black);
+    font-size: 1.8vw;
     line-height: 1.5;
-    /*margin-left: 620px;
-    margin-top: 270px;*/
-    margin-top: 250px;
-    margin-left: 40%;
+    align-self: flex-start;
+    width: 53%;
+    margin-left: 20px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    font-family: Overthinkers;
+    color: var(--primary-red);
+    font-size: 30px;
+    background-color: var(--primary-black);
+    width: 60.1vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    overflow: hidden;
+}
+
+.subscribe h2 {
+    margin-top: 10px;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.subscribe div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.subscribe div img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.mobile-image {
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
     .home-page {
         background-image: none;
     }
+
+    .mobile-image {
+        display: flex;
+    }
+
+    .mobile-image img {
+        width: 100%;
+    }
+
     .home-content {
+        margin: 0;
+        width: 100%;
+    }
+
+    .home-content p {
         max-width: 100%;
+        width: 100%;
         padding: 10px;
         margin: 0;
         margin-top: 20px;
-        color: var(--primary-black);
-        background-color: transparent;
         border-color: var(--primary-black);
         border-style: solid;
-        font-size: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .subscribe {
+        margin-top: 10px;
+        position: relative;
+        width: 100%;
+    }
+
+    .subscribe h2 {
+        font-size: 30px;
+    }
+
+    .subscribe div a {
+        width: 15%;
+    }
+
+    .subscribe div a img {
+        width: 100%;
     }
 
 }
 
 /* Episodes Page */
 .episodes-page {
-    background-image: url(/images/top-left-bg.svg);
+    background-image: url(/images/new-top-right-bg.svg);
     background-position: top right;
     background-size: 550px;
     background-repeat: no-repeat;
@@ -232,6 +298,7 @@ nav a {
 }
 
 .episodes-foot h1 {
+    display: none;
     font-size: 6em;
     position: fixed;
     bottom: 0;
@@ -271,11 +338,14 @@ nav a {
         margin-top: 10px;
     }
 
+    .episodes-foot h1 {
+        display: block;
+    }
 }
 
 /* About Page */
 .about-page {
-    background-image: url(/images/top-left-bg.svg);
+    background-image: url(/images/new-top-right-bg.svg);
     background-position: top right;
     background-size: 550px;
     background-repeat: no-repeat;
@@ -290,7 +360,7 @@ nav a {
     }
 }
 
-/* Subscribe Page */
+/* Subscribe Page
 .subscribe-page {
     background-image: url(/images/top-left-bg.svg);
     background-position: top right;
@@ -363,9 +433,11 @@ nav a {
     }
 }
 
+*/
+
 /* Social Page */
 .social-page {
-    background-image: url(/images/top-left-bg.svg);
+    background-image: url(/images/new-top-right-bg.svg);
     background-position: top right;
     background-size: 550px;
     background-repeat: no-repeat;
@@ -375,39 +447,44 @@ nav a {
 
 .social-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .social-img {
     height: 500px;
+    margin: 0 50px;
 }
 
 .social-icons {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     font-family: Overthinkers;
-    font-size: 70px;
+    font-size: 4rem;
+    width: 20vw;
 }
 
 .facebook {
     display: flex;
-    margin-left: 150px;
-    margin-right: 50px;
+    align-items: space-between;
+    width: 100%;
 }
 
 .facebook p {
     transform: rotate(270deg);
+    margin: 0;
 }
 
 .instagram {
     display: flex;
-    align-self: flex-start;
-    margin-left: 40px;
+    justify-content: space-between;
 }
 
-.instagram img {
-    margin-right: 50px;
+.instagram p {
+    transform: rotate(270deg);
+    margin: 0;
+    font-size: 3.6rem;
 }
 
 .social-icons img {
