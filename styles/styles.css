@@ -412,11 +412,11 @@ body {
         margin: 0;
     }
 
-    .top-row h2, .bottom-row h2{
+    .amanda, .kevin{
         font-size: 50px;
     }
 
-    .top-row p, .bottom-row p {
+    .amanda-desc, .kevin-desc {
         font-size: 18px;
     }
 
