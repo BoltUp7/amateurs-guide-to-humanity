@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amateur's Guide to Humanity | Podcast | Episodes</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.svg"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3TDSEWZV4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L3TDSEWZV4');
+</script>
 </head>
-<body class="episodes-page">
-    <div class="title-bar">
-        <div class="container flex">
-            <a class="logo" href="index.html"><img src="images/header-image.svg" alt=""></a>
-            <nav>
-                <ul>
+
+<body>
+    <div class="container episodes-page">
+        <div class="header">
+            <a href="index.html" class="logo"><img src="images/header-image.svg" alt=""></a>
+            <div class="nav">
+                <ul class = "navbar">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="episodes.html">EPISODES</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -23,26 +35,27 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </nav>
+            </div>
+        </div>
+
+        <!--Main Body-->
+        <h1>EPISODES</h1>
+        <img src="images/heart-bg.svg" alt="" class="heart-bg">
+        <div id='buzzsprout-large-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1870575.js?container_id=buzzsprout-large-player&player=large'></script>
+
+        <div id='buzzsprout-small-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1870575.js?container_id=buzzsprout-small-player&player=small'></script>
         </div>
     </div>
-    <div class="list-of-episodes">
-        <iframe id="player_iframe" src="https://www.buzzsprout.com/1870575?client_source=large_player&iframe=true&referrer=https%3A%2F%2Fwww.buzzsprout.com%2F1870575%2Fpodcast%2Fembed" loading="lazy" width="900px" height="400" frameborder="0" scrolling="yes" title="Amateur's Guide to Humanity"></iframe>
-        <div id='buzzsprout-small-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1870575.js?container_id=buzzsprout-small-player&player=small'></script>
-    </div>
-    <!--<p class="episodes-content">In this podcast, hosts and besties Amanda Rose and Kevin Ryan take an unfiltered look at topics on the human condition, sharing their thoughts, experiences, and what little advice they can muster from their short time on Earth. No topic is off limits and philosophical tangents are guaranteed on this existential journey broadcast.</p> -->
-    
-    <footer class="episodes-foot"><h1>EPISODES</h1></footer>
     <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector("nav ul");
-
-        hamburger.addEventListener("click", mobileMenu);
-
-        function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-        }
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav ul");
+    
+            hamburger.addEventListener("click", mobileMenu);
+    
+            function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            }
     </script>
-</body>
-</html>
+    </body>
+    </html>

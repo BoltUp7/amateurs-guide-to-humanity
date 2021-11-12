@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amateur's Guide to Humanity | Podcast | Home Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.svg"/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3TDSEWZV4"></script>
@@ -16,14 +17,14 @@
 
   gtag('config', 'G-L3TDSEWZV4');
 </script>
-
 </head>
-<body class="home-page">
-    <div class="title-bar">
-        <div class="container flex title">
-            <a class="logo" href="index.html"><img src="images/header-image.svg" alt=""></a>
-            <nav>
-                <ul>
+
+<body>
+    <div class="container home-page">
+        <div class="header">
+            <a href="index.html" class="logo"><img src="images/header-image.svg" alt=""></a>
+            <div class="nav">
+                <ul class = "navbar">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="episodes.html">EPISODES</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -34,31 +35,33 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </nav>  
+            </div>
         </div>
-    </div>
-    <div class="mobile-image">
-        <img src="images/new-home-bg.png" alt="">
-    </div>
-    <div class="home-content">
-        <p>Amateur’s Guide to Humanity is less of a literal manual and more of an invitation to join a community of wandering souls ruminating on life and committing to live it both bravely and with a grain of salt.</p>
-    </div>
-    <div class="subscribe">
-        <h2>SUBSCRIBE</h2>
-        <div>
-            <a href="https://podcasts.apple.com/us/podcast/amateurs-guide-to-humanity/id1594411464">
-                <img src="images/apple-podcasts.svg" alt="" class="icon"></a>
-            <a href="https://open.spotify.com/show/6LfoWB3f27c7FXhy7PbZjM">
-                <img src="images/spotify.svg" alt="" class="icon"></a>
-            <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xODcwNTc1LnJzcw==">
-                <img src="images/google-podcasts.svg" alt="" class="icon"></a>
-            <a href="https://music.amazon.com/podcasts/ac875a24-859f-423e-8952-521b97b80ff9/amateur's-guide-to-humanity">
-                <img src="images/amazon-music.svg" alt="" class="icon"></a>
+
+<!-- Main Body -->
+        <img src="images/home-photo.svg" alt="" class="home-photo">
+        <img src="images/heart-bg.svg" alt="" class="heart-bg">
+        <p class="home-content">Amateur’s Guide to Humanity is less of a literal manual and more of an invitation to join a community of wandering souls ruminating on life and committing to live it both bravely and with a grain of salt.</p>
+        <div class="subscribe">
+            <h2>SUBSCRIBE</h2>
+            <div>
+                <a href="https://podcasts.apple.com/us/podcast/amateurs-guide-to-humanity/id1594411464">
+                    <img src="images/apple-podcasts.svg" alt="" class="icon"></a>
+                <a href="https://open.spotify.com/show/6LfoWB3f27c7FXhy7PbZjM">
+                    <img src="images/spotify.svg" alt="" class="icon"></a>
+                <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xODcwNTc1LnJzcw==">
+                    <img src="images/google-podcasts.svg" alt="" class="icon"></a>
+                <a href="https://music.amazon.com/podcasts/ac875a24-859f-423e-8952-521b97b80ff9/amateur's-guide-to-humanity">
+                    <img src="images/amazon-music.svg" alt="" class="icon"></a>
+            </div>
         </div>
+
     </div>
+
+
     <script>
         const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector("nav ul");
+        const navMenu = document.querySelector(".nav ul");
 
         hamburger.addEventListener("click", mobileMenu);
 

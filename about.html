@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amateur's Guide to Humanity | Podcast | About</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Amateur's Guide to Humanity | Podcast | About Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.svg"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3TDSEWZV4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L3TDSEWZV4');
+</script>
 </head>
-<body class="about-page">
-    <div class="title-bar">
-        <div class="container flex">
-            <a class="logo" href="index.html"><img src="images/header-image.svg" alt=""></a>
-            <nav>
-                <ul>
+
+<body>
+    <div class="container about-page">
+        <div class="header">
+            <a href="index.html" class="logo"><img src="images/header-image.svg" alt=""></a>
+            <div class="nav">
+                <ul class = "navbar">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="episodes.html">EPISODES</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -23,35 +35,50 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </nav>
-        </div>
-    </div>
-    <div class="about-content container">
-        <div class="amanda">
-            <h3>MOM. MEMOIRIST. MARKETER. MOTIVATOR</h3>
-            <h2>AMANDA ROSE</h2>
-        </div>
-        <div class="pic-row">
-            <img src="images/about-image-left.png" alt="">
-            <div class="left-info">
-                <p>About Mandi</p>
             </div>
-            <div class="right-info">
-                <p>About Kevin</p>
+        </div>
+
+        <!--Main Body-->
+        <img src="images/heart-bg.svg" alt="" class="heart-bg">
+        <div class="about-content">
+            <div class="top-row">
+                <p>MOM. MEMOIRIST. MARKETER. MOTIVATOR.</p>
+                <h2>AMANDA ROSE</h2>
             </div>
-            <img src="images/about-image-right.png" alt="">
+            <div class="middle-row">
+                <img class="left-image" src="images/about-image-left.png" alt="">
+                <ul class="left-list">
+                    <li>ENNEAGRAM: 4W3</li>
+                    <li>AURA: PURPLE</li>
+                    <li>SIGN: LEO</li>
+                    <li>IDOL: CHER</li>
+                    <li>OBSESSION: SCI-FI</li>
+                </ul>
+                <ul class="right-list">
+                    <li>ENNEAGRAM: 2W3</li>
+                    <li>AURA: BLUE</li>
+                    <li>SIGN: VIRGO</li>
+                    <li>IDOL: JEFF GOLDBLUM</li>
+                    <li>OBSESSION: SNL</li>
+                </ul>
+                <img class="right-image" src="images/about-image-right.png" alt="">
+            </div>
+            <div class="bottom-row">
+                <h2>KEVIN RYAN</h2>
+                <p>DAD. DRUMMER. DABBLER. DREAMER</p>
+            </div>
         </div>
     </div>
     <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector("nav ul");
-
-        hamburger.addEventListener("click", mobileMenu);
-
-        function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-        }
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav ul");
+    
+            hamburger.addEventListener("click", mobileMenu);
+    
+            function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            }
     </script>
-</body>
-</html>
+    </body>
+    </html>
