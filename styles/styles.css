@@ -61,7 +61,7 @@ body {
     width: 100%;
     grid-column: 1/4;
     grid-row: 1/2;
-    z-index: 2;
+    z-index: 3;
 }
 
 .logo {
@@ -176,6 +176,7 @@ body {
     grid-row: 1/4;
     height: 100vh;
     margin-left: -50px;
+    z-index: 2;
 }
 
 .heart-bg {
@@ -201,6 +202,13 @@ body {
         grid-row: 2/3;
         align-self: end;
     }
+}
+
+.bg-subscribe {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    background-color: var(--primary-black);
+    z-index: 1;
 }
 
 .subscribe {
@@ -252,6 +260,10 @@ body {
         border: black solid 1px;
     }
     
+    .bg-subscribe {
+        display: none;
+    }
+
     .subscribe {
         z-index: 1;
         padding: 25px 0;
@@ -328,7 +340,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 2%;
-    margin-right: -100px;
+    margin-right: 1%;
 }
 
 .right-image {
@@ -336,7 +348,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 2%;
-    margin-left: -100px;
+    margin-left: 1%;
 }
 
 .middle-row ul {
@@ -344,7 +356,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 20px 1%;
 }
 
 .left-list {
@@ -400,6 +412,8 @@ body {
     .right-image {
         margin: 0;
         padding: 5%;
+        width: 75%;
+        align-self: center;
     }
 
     .top-row {
