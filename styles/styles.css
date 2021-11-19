@@ -309,6 +309,8 @@ body {
 
     #buzzsprout-small-player {
         display: block;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
